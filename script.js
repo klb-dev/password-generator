@@ -87,23 +87,23 @@ const svgMoon = `
         updateThemeIcon(newTheme); // ✅ this should trigger
     });
 
-    // chrome.storage.local.get(['theme'], (result) => {
-    //     const theme = result.theme === 'light' ? 'light' : 'dark';
+    chrome.storage.local.get(['theme'], (result) => {
+        const theme = result.theme === 'light' ? 'light' : 'dark';
 
-    //     if (theme === 'light') {
-    //         container.classList.add("container-light");
-    //         document.body.classList.add("light-mode");
-    //     }
+        if (theme === 'light') {
+            container.classList.add("container-light");
+            document.body.classList.add("light-mode");
+        }
 
-    //     updateThemeIcon(theme); // ✅ this should run on page load
-    //     setIcon(theme === "light" ? "sun" : "moon");
-    // });
+        updateThemeIcon(theme); // ✅ this should run on page load
+        setIcon(theme === "light" ? "sun" : "moon");
+    });
 
-    // chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    //     if (message.action === 'generate-password') {
-    //         displayPassword(generatePassword(characters));
-    //     }
-    // });
+    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+        if (message.action === 'generate-password') {
+            displayPassword(generatePassword(characters));
+        }
+    });
 
     function setIcon() {
         if (chrome.action && chrome.action.setIcon) {
