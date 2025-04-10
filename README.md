@@ -39,8 +39,8 @@ A sleek and secure browser extension that generates strong, customizable passwor
  ├── index.html # Extension popup layout <br>
  ├── script.js # Password generation + theme logic <br>
  ├── style.css # Styling and animation <br>
- ├── manifest.json # Extension manifest (v3) └── icons/ # Browser action icons <br>
- ├── icons # icons for extention different sizes <br>
+ ├── manifest.json # Extension manifest (v3) <br>
+ ├── icons/ # Browser action icons <br>
  ├── background.js for extention feature <br>
  ├── moon.svg # moon icon for toggle feature <br>
  └── sun.svg # sun icon for toggle feature
