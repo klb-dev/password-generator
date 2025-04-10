@@ -14,6 +14,46 @@ body, .container, .password-container, #btn-toggle, #btn-symbols, #btn-wo-symbol
     transition: all 0.3s ease-in-out;
 }
 
+body.light-mode {
+    background-color: #ecfdf5;
+    color: #273549;
+}
+
+body.light-mode #btn-toggle {
+    background-color: #d1fae5;
+    color: #065f06;
+    border-color: #065f06;
+}
+
+body.light-mode #copy-btn {
+    background-color: #bbf7d0;
+    color: #065f06;
+    border-color: #065f06;
+}
+
+body.light-mode .btn-container {
+    background-color: #d1fae5; 
+    border-bottom: 1px solid #a7f3d0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .title {
+    color: #fff;
+}
+
+#theme-icon {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(12%) saturate(355%) hue-rotate(86deg) brightness(100%) contrast(95%);
+    transition: filter 0.3s ease;
+}
+
+body.light-mode #theme-icon {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(98%) saturate(749%) hue-rotate(359deg) brightness(100%) contrast(95%);
+}
+#theme-icon-container svg{
+    width: 1.5em;
+    height: 1.75em;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -38,6 +78,7 @@ body, .container, .password-container, #btn-toggle, #btn-symbols, #btn-wo-symbol
     font-weight: bolder;
     font-size: 36px;
     margin-bottom: 10px;
+    color: inherit;
 }
 
 .green {
@@ -77,10 +118,12 @@ p {
 
 .btn-container {
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    margin-top: 2em;
-    padding-right: 12em;
+    padding: 1.5em 2em;
+    background-color: #1f2937;
+    border-bottom: 1px solid #374151; 
 }
 
 #btn-toggle {
@@ -175,6 +218,20 @@ p {
     position: relative;
 }
 
+.rotate-in {
+    animation: rotateIn 0.6s ease-in-out forwards;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
 
 
 

@@ -35,6 +35,10 @@
         "128": "icons/sun-128.png"
       }
     },
-    "permissions": []
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["action", "storage", "scripting", "clipboardWrite"],
+    "host_permissions": ["<all_urls>"]
   }
   
