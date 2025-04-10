@@ -41,48 +41,8 @@ body.light-mode .title {
     color: #fff;
 }
 
-#theme-icon {
-    filter: brightness(0) saturate(100%) invert(87%) sepia(12%) saturate(355%) hue-rotate(86deg) brightness(100%) contrast(95%);
-    transition: filter 0.3s ease;
-}
-
 body.light-mode #theme-icon {
     filter: brightness(0) saturate(100%) invert(20%) sepia(98%) saturate(749%) hue-rotate(359deg) brightness(100%) contrast(95%);
-}
-#theme-icon-container svg{
-    width: 1.5em;
-    height: 1.75em;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    height: 500px;
-    margin: auto;
-}
-
-.dark,
-.container-light {
-    margin: 100px auto;
-    padding: 100px;
-    background-color: #1f2937;
-}    
-
-.container-light {
-    background-color: #ecfdf5;
-    color: #273549;
-}
-
-.title {
-    font-weight: bolder;
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: inherit;
-}
-
-.green {
-    color: #10b981;
 }
 
 p {
@@ -90,68 +50,19 @@ p {
     margin-top: 10px;
 }
 
-#btn-symbols,
-#btn-wo-symbols {
-    cursor: pointer;
-    color: #fff;
-    background-color: #10b981;
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 16px;
-    border: none;
-    margin: 20px 10px 0 0;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-#btn-wo-symbols{
-    background-color: #029d69;
+#theme-icon {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(12%) saturate(355%) hue-rotate(86deg) brightness(100%) contrast(95%);
+    transition: filter 0.3s ease;
 }
 
-#btn-symbols:hover {
-    background-color: #029d69;
-    color: #fff;
-}
-
-#btn-wo-symbols:hover {
-    background-color: #10b981;
-    color: #fff;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding: 1.5em 2em;
-    background-color: #1f2937;
-    border-bottom: 1px solid #374151; 
-}
-
-#btn-toggle {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2f3e53;
-    color: #10b981;
-    padding: 10px 20px;
-    border: 2px solid #10b981;
-    border-radius: 10px;
-}
-
-.wrapper:after {
-    content: " ";
-    width: 400px;
-    height: 5px;
-    margin: 35px auto;
-    background-color: #2f3e53;
-    display: block;
-}
-
-.password-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 20px;
+#theme-icon-container svg{
+    width: 1.5em;
+    height: 1.75em;
 }
 
 #password-output{
@@ -216,6 +127,101 @@ p {
 
 #copy-btn[disabled][data-tooltip] {
     position: relative;
+}
+
+#btn-symbols,
+#btn-wo-symbols {
+    cursor: pointer;
+    color: #fff;
+    background-color: #10b981;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    margin: 20px 10px 0 0;
+}
+
+#btn-wo-symbols{
+    background-color: #029d69;
+}
+
+#btn-symbols:hover {
+    background-color: #029d69;
+    color: #fff;
+}
+
+#btn-wo-symbols:hover {
+    background-color: #10b981;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+.dark,
+.container-light {
+    margin: 100px auto;
+    padding: 100px;
+    background-color: #1f2937;
+}    
+
+.container-light {
+    background-color: #ecfdf5;
+    color: #273549;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+.green {
+    color: #10b981;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em 2em;
+    background-color: #1f2937;
+    border-bottom: 1px solid #374151; 
+}
+
+#btn-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3e53;
+    color: #10b981;
+    padding: 10px 20px;
+    border: 2px solid #10b981;
+    border-radius: 10px;
+}
+
+.wrapper:after {
+    content: " ";
+    width: 400px;
+    height: 5px;
+    margin: 35px auto;
+    background-color: #2f3e53;
+    display: block;
+}
+
+.password-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
 }
 
 .rotate-in {

@@ -35,15 +35,15 @@ A sleek and secure browser extension that generates strong, customizable passwor
 
 ## 📁 Project Structure
 
-/extension-root/ 
-├── index.html # Extension popup layout 
-├── script.js # Password generation + theme logic 
-├── style.css # Styling and animation 
-├── manifest.json # Extension manifest (v3) └── icons/ # Browser action icons 
-├── icons # icons for extention different sizes
-├── background.js for extention feature
-├── moon.svg # moon icon for toggle feature 
-└── sun.svg # sun icon for toggle feature
+- /extension-root/ 
+- ├── index.html # Extension popup layout 
+- ├── script.js # Password generation + theme logic 
+- ├── style.css # Styling and animation 
+- ├── manifest.json # Extension manifest (v3) └── icons/ # Browser action icons 
+- ├── icons # icons for extention different sizes
+- ├── background.js for extention feature
+- ├── moon.svg # moon icon for toggle feature 
+- └── sun.svg # sun icon for toggle feature
 
 
 ## 🛡️ Password Logic
@@ -62,7 +62,7 @@ A sleek and secure browser extension that generates strong, customizable passwor
 
 ## 🧠 Author
 
-**Karen B.** – Blue Byrd Development ![Blue Byrd Development Logo](icons/bbd-logo.png) 
+**Karen B.** – Blue Byrd Development ![Blue Byrd Development Logo](icons/bbd-logo.png)<br> 
 Made with love and passion for web development. 🚀�
 
 ## 📄 License
