@@ -35,15 +35,15 @@ A sleek and secure browser extension that generates strong, customizable passwor
 
 ## 📁 Project Structure
 
-- /extension-root/ 
-- ├── index.html # Extension popup layout 
-- ├── script.js # Password generation + theme logic 
-- ├── style.css # Styling and animation 
-- ├── manifest.json # Extension manifest (v3) └── icons/ # Browser action icons 
-- ├── icons # icons for extention different sizes
-- ├── background.js for extention feature
-- ├── moon.svg # moon icon for toggle feature 
-- └── sun.svg # sun icon for toggle feature
+ /extension-root/ <br>
+ ├── index.html # Extension popup layout <br>
+ ├── script.js # Password generation + theme logic <br>
+ ├── style.css # Styling and animation <br>
+ ├── manifest.json # Extension manifest (v3) └── icons/ # Browser action icons <br>
+ ├── icons # icons for extention different sizes <br>
+ ├── background.js for extention feature <br>
+ ├── moon.svg # moon icon for toggle feature <br>
+ └── sun.svg # sun icon for toggle feature
 
 
 ## 🛡️ Password Logic
