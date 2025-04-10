@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- google font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btn-container btn-toggle">
+        <button id="btn-toggle"><img src="/icons/moon-16.png" alt="moon">&nbsp;&nbsp;/&nbsp;&nbsp;<img src="/icons/sun-16.png" alt="sun"></button>
+    </div>
+    
+    <div class="container dark container-light">
+
+        <h1 class="title">Generate a <span class="green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <div class="wrapper">
+            <button id="btn-symbols" aria-label="Generate password with symbols">With Symbols</button>
+            <button id="btn-wo-symbols" aria-label="Generate password without symbols">Without Symbols</button>
+        </div>
+        
+        <div class="password-container">
+            <div id="password-output"></div>
+            <button id="copy-btn" aria-label="Copy password to clipboard" disabled data-tooltip="Generate a password first">Copy</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
