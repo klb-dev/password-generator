@@ -12,7 +12,7 @@ A sleek and secure browser extension that generates strong, customizable passwor
 
 ## 📸 Preview
 
-![password generator screenshot](./screenshot.png) *(Optional — add a screenshot of the popup)*
+![password generator screenshot](/icons/passwordGeneratorScreenShot.png) *(Optional — add a screenshot of the popup)*
 
 ## 🔧 How to Use
 
@@ -62,7 +62,7 @@ A sleek and secure browser extension that generates strong, customizable passwor
 
 ## 🧠 Author
 
-**Karen B.** – Blue Byrd Development [Blue Byrd Development Logo](icons/bbd-logo.png) 
+**Karen B.** – Blue Byrd Development ![Blue Byrd Development Logo](icons/bbd-logo.png) 
 Made with love and passion for web development. 🚀�
 
 ## 📄 License
